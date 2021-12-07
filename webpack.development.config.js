@@ -3,7 +3,7 @@
 // process.traceDeprecation = true;
 const webpack = require('webpack');
 const _ = require('lodash');
-const LiveReloadPlugin = require('webpack-livereload-plugin');
+// const LiveReloadPlugin = require('webpack-livereload-plugin');
 
 const baseConfigFn = require('./webpack.base.config')
 // Development webpack config
@@ -19,9 +19,9 @@ module.exports = (env) => {
       new webpack.BannerPlugin({ // Label each module in the output bundle
         banner: "hash:[hash], chunkhash:[chunkhash], name:[name], filebase:[filebase], query:[query], file:[file]"
       }),
-      new LiveReloadPlugin({ // Reload the page upon rebuild
-        appendScriptTag: true,
-      }),
+      // new LiveReloadPlugin({ // Reload the page upon rebuild
+      //   appendScriptTag: true,
+      // }),
     ])
   })
 }

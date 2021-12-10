@@ -1,7 +1,7 @@
 {
   "name": "node:6.17.1",
-  "dockerComposeFile": ["../docker-compose.yml", "docker-compose.extend.yml"],
-  "service": "node",
-  "shutdownAction": "stopCompose",
-  "workspaceFolder": "/workspace"
+  "image": "node:6.17.1",
+  "remoteUser": "node",
+  "forwardPorts": [4200],
+  "shutdownAction": "stopContainer"
 }

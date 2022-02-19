@@ -57,7 +57,7 @@ module.exports = FacebookHandler = class FacebookHandler extends CocoClass
         js = d.createElement('script')
         js.id = id
         js.async = true
-        js.src = '//connect.facebook.net/en_US/sdk.js'
+        # js.src = '//connect.facebook.net/en_US/sdk.js'
 
         #js.src = '//connect.facebook.net/en_US/all/debug.js'
         ref.parentNode.insertBefore js, ref
